@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ----------------  header ------------------------*/
+
+header {    
+    height: auto;
+}
+
+header .navbar {
+    background-color: rgba(53, 58, 64, 1);    
+}
+
+.navbar-brand img {
+    width: 30vw;
+    max-width: 140px;
+    height: auto;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:#949699;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-item:last-child a{
+    color: green;
+}
+
+.carrousel-item-img-one, .carrousel-item-img-two, .carrousel-item-img-three {
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.carrousel-item-img-one {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/ba1.jpg);    
+}
+
+.carrousel-item-img-two {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/ba2.jpg);    
+}
+
+.carrousel-item-img-three {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/ba3.jpg);    
+}
+
+/* ------------------- Speakers ------------------------*/
+
+.card-body-fix {
+    padding: 1rem 1rem;
+}
+
+/* -------------------- Place --------------------------*/
+
+.placeDateLeft {
+    background-image:url("../assets/img/honolulu.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 35vh;
+}
+
+.placeDateRight {
+    background-color: rgb(57, 57, 57);
+    color:white;
+    height: auto;
+}
+
+.placeDateRight a {
+    margin-bottom: 2rem;
+}
+
+/* -------------------- Form --------------------------*/
+
+.btn-send {
+    background-color: #96c93e;
+}
+
+/* -------------------- Footer --------------------------*/
+
+footer {
+    background-image: linear-gradient(to right, rgba(29,55,68, 1), rgba(29,82,113,1));
+}
+
+@media screen and (min-width: 767px ) {
+    .placeDateLeft, .placeDateRight {
+        height: 50vh;
+    }
+
+    .placeDateLeft {
+        background-position: left bottom;
+    }
+
+   .carrousel-item-img-one, .carrousel-item-img-two, .carrousel-item-img-three {
+        height: 50vh;
+    }
+
+    .card-body-fix {
+        padding: 1rem 0.5rem;
+    }
+}
+
+@media screen and (min-width: 992px ) {
+    .carrousel-item-img-one, .carrousel-item-img-two, .carrousel-item-img-three {
+        height: 75vh;
+    }
+
+    .carousel-caption {
+        bottom: 7rem;
+    }
+}
