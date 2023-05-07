@@ -41,6 +41,10 @@ header .navbar {
     color: green;
 }
 
+.fsNavHeader, .btnSpeaker, .btnBuytickets {
+    font-size: 0.9em;
+}
+
 .carrousel-item-img-one, .carrousel-item-img-two, .carrousel-item-img-three {
     width: 100%;
     height: 40vh;
@@ -99,7 +103,17 @@ footer {
     background-image: linear-gradient(to right, rgba(29,55,68, 1), rgba(29,82,113,1));
 }
 
-@media screen and (min-width: 767px ) {
+.fsNavFooter {
+    font-size: 0.9em;
+}
+
+/*@media screen and (max-width: 600px) {
+    .carrousel-item-img-one, .carrousel-item-img-two, .carrousel-item-img-three {
+        height: 40vh;
+    }
+}*/
+
+@media screen and (min-width: 768px ) {
     .placeDateLeft, .placeDateRight {
         height: 50vh;
     }
@@ -108,21 +122,49 @@ footer {
         background-position: left bottom;
     }
 
-   .carrousel-item-img-one, .carrousel-item-img-two, .carrousel-item-img-three {
+   /*.carrousel-item-img-one, .carrousel-item-img-two, .carrousel-item-img-three {
         height: 50vh;
-    }
+    }*/
 
     .card-body-fix {
         padding: 1rem 0.5rem;
+    }
+
+    .fsNavHeader, .btnSpeaker, .btnBuytickets {
+        font-size: 1em;
+    }
+
+    .fsNavFooter {
+        font-size: 1em;
     }
 }
 
 @media screen and (min-width: 992px ) {
     .carrousel-item-img-one, .carrousel-item-img-two, .carrousel-item-img-three {
-        height: 75vh;
+        height: 65vh;
     }
 
     .carousel-caption {
         bottom: 7rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .fsNavHeader, .btnSpeaker, .btnBuytickets {
+        font-size: 1.2em;
+    }
+
+    .fsNavFooter {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 992px) and (orientation: landscape) {
+    .carrousel-item-img-one, .carrousel-item-img-two, .carrousel-item-img-three {
+        height: 90vh;
+    }
+
+    .placeDateLeft, .placeDateRight {
+        height: 85vh;
     }
 }
