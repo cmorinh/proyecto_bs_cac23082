@@ -157,4 +157,8 @@ footer {
     .placeDateLeft, .placeDateRight {
         height: 85vh;
     }
+
+    .fsNavFooter {
+        display: inline-block;
+    }
 }
