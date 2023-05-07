@@ -108,6 +108,10 @@ footer {
 }
 
 @media screen and (min-width: 768px ) {
+    .carrousel-item-img-one, .carrousel-item-img-two, .carrousel-item-img-three {
+        height: 60vh;
+    }
+
     .placeDateLeft, .placeDateRight {
         height: 50vh;
     }
@@ -136,6 +140,12 @@ footer {
 
     .carousel-caption {
         bottom: 7rem;
+    }    
+}
+
+@media screen and (min-width: 1024px) {
+    .carrousel-item-img-one, .carrousel-item-img-two, .carrousel-item-img-three {
+        height: 60vh;
     }
 }
 
@@ -146,19 +156,5 @@ footer {
 
     .fsNavFooter {
         font-size: 1.2em;
-    }
-}
-
-@media screen and (max-width: 992px) and (orientation: landscape) {
-    .carrousel-item-img-one, .carrousel-item-img-two, .carrousel-item-img-three {
-        height: 90vh;
-    }
-
-    .placeDateLeft, .placeDateRight {
-        height: 85vh;
-    }
-
-    .fsNavFooter {
-        display: inline-block;
     }
 }
