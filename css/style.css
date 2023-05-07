@@ -145,7 +145,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
     .carrousel-item-img-one, .carrousel-item-img-two, .carrousel-item-img-three {
-        height: 60vh;
+        height: 80vh;
     }
 }
 
