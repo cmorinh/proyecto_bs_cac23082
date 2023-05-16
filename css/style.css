@@ -158,3 +158,13 @@ footer {
         font-size: 1.2em;
     }
 }
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .carrousel-item-img-one, .carrousel-item-img-two, .carrousel-item-img-three {
+        height: 90vh;
+    }
+
+    .placeDateLeft, .placeDateRight {
+        height: 85vh;
+    }
+}
