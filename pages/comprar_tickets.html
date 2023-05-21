@@ -1,0 +1,162 @@
+<!doctype  html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto</title>
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css"> 
+    </head>
+    <body>      
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid container-lg">
+                  <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/codoacodo.png" alt="Logo de codo a codo" width="140" height="auto">
+                    <span class="text-white fs-4">Conf Bs As</span>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link fsNavHeader" aria-current="page" href="../index.html">La conferencia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fsNavHeader" href="../index.html#speakers">Los oradores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fsNavHeader" href="../index.html#placeDate">El Lugar y la Fecha</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link fsNavHeader" href="../index.html#form">Conviertete en Orador</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link fsNavHeader active" href="#">Comprar Tickets</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>  
+        </header>
+        <main>
+            <section class="container container-md">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8">
+                        <div class="card-group m-4">
+                            <div class="card border-primary">
+                              <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Estudiante</h5>
+                                <p class="card-text">Tienen un descuento</p>
+                                <p class="card-text"><small class="fw-bold">80%</small></p>
+                                <p class="card-text"><small class="text-muted">* presentar documentación</small></p>
+                              </div>
+                            </div>
+                            <div class="card border-primary card-fix-border-left mx-md-2">
+                              <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Trainee</h5>
+                                <p class="card-text">Tienen un descuento</p>
+                                <p class="card-text"><small class="fw-bold">50%</small></p>
+                                <p class="card-text"><small class="text-muted">* presentar documentación</small></p>
+                              </div>
+                            </div>
+                            <div class="card border-warning card-fix-border-left">
+                              <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Junior</h5>
+                                <p class="card-text">Tienen un descuento</p>
+                                <p class="card-text"><small class="fw-bold">15%</small></p>
+                                <p class="card-text"><small class="text-muted">* presentar documentación</small></p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <h6>VENTA</h6>        
+                        <h1>VALOR DE TICKET $200</h1>    
+                    </div>
+                </div>
+                <form>
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-md-5 col-lg-4 mb-3">
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="col-11 col-md-5 col-lg-4 mb-3">
+                            <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                        </div>
+                        <div class="col-11 col-md-10 col-lg-8 mb-3">
+                            <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" placeholder="Correo">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-md-5 col-lg-4 mb-3">
+                            <label for="quantity" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="quantity" placeholder="Cantidad">
+                        </div>
+                        <div class="col-11 col-md-5 col-lg-4 mb-3">
+                            <label for="options" class="form-label">Categoria</label>
+                            <select id="categories" class="form-select" aria-label="Default select">
+                                <option value="1" selected>Estudiante</option>
+                                <option value="2">Trainee</option>
+                                <option value="3">Junior</option>
+                            </select>
+                        </div>
+                        <div class="col-11 col-md-10 col-lg-8 my-4">
+                            <div class="alert alert-primary" role="alert">
+                                Total a pagar: $
+                            </div>                   
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-md-5 col-lg-4 mb-3">
+                            <button type="reset" class="btn btn-success btn-buytickets">Borrar</button>
+                        </div>
+                        <div class="col-11 col-md-5 col-lg-4 mb-3">
+                            <button type="submit" class="btn btn-success btn-buytickets">Resumen</button>
+                        </div>
+                    </div>
+                </form>
+            </section>             
+        </main>       
+        <footer>
+            <div class="container">
+                <div class="row row justify-content-center">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg navbar-dark">
+                            <div class="container-fluid d-block text-center d-md-flex">
+                              <a class="nav-link fsNavFooter text-white p-md-3" href="#">
+                                  Preguntas frecuente
+                              </a>
+                              <a class="nav-link fsNavFooter text-white p-md-3" href="#">
+                                  Contáctanos
+                              </a>
+                              <a class="nav-link fsNavFooter text-white p-md-3" href="#">
+                                  Prensa
+                              </a>
+                              <a class="nav-link fsNavFooter text-white p-md-3" href="#">
+                                  Conferencias
+                              </a>
+                              <a class="nav-link fsNavFooter text-white p-md-3" href="#">
+                                  Terminos y condiciones
+                              </a>
+                              <a class="nav-link fsNavFooter text-white p-md-3" href="#">
+                                  Privacidad
+                              </a>
+                              <a class="nav-link fsNavFooter text-white p-md-3" href="#">
+                                  Estudiantes
+                              </a>
+                            </div>
+                          </nav>
+                    </div>
+                </div>                
+            </div>            
+        </footer>        
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

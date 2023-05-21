@@ -107,6 +107,23 @@ footer {
     font-size: 0.9em;
 }
 
+/* -------------------- Comprar tickets --------------------------*/
+
+.navbar-light .navbar-nav .nav-item:last-child a.active {
+    color: rgb(3, 252, 3);
+}
+
+.card-group>.card.card-fix-border-left {
+    border-left: 1px solid;
+}
+
+.btn-buytickets {
+    background-color: #96c93e;
+    border-color: #96c93e;
+    width: 100%;
+}
+
+
 @media screen and (min-width: 768px ) {
     .carrousel-item-img-one, .carrousel-item-img-two, .carrousel-item-img-three {
         height: 60vh;
